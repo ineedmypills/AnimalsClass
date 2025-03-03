@@ -1,6 +1,6 @@
 #include "Cat.h"
 
-Cat::Cat(std::string_view name, int age, int weight, bool bold, bool roundEars) : Animal(name, age, weight)
+Cat::Cat(std::string_view name, int age, double weight, bool bold, bool roundEars) : Animal(name, age, weight)
 {
 	this->bold = bold;
 	this->roundEars = roundEars;
@@ -33,6 +33,5 @@ void Cat::Poop()
 
 void Cat::ShowInfo()
 {
-	std::cout << std::format("\nÌÿó!!\nÊëè÷êà: {}\nÂîçðàñò: {}\nÂåñ: {}\nËûñûé: {}\nÊðóãëûå óøè: {}", name, age, weight, bold, roundEars);
-
+	std::cout << std::format("\nÌÿó!!\nÊëè÷êà: {}\nÂîçðàñò: {}\nÂåñ: {}\nËûñûé: {}\nÊðóãëûå óøè: {}\n", GetName(), GetAge(), GetWeight(), GetBold(), GetRoundEars());
 }

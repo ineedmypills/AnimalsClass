@@ -12,6 +12,11 @@ public:
 	Animal(std::string_view name, int age, double weight);
 	Animal(const Animal& other);
 
+	std::string_view GetName();
+	int GetAge();
+	double GetWeight();
+
+
 private:
 	std::string_view name{"None"};
 	int age{ 0 };
