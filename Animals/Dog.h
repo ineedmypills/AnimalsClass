@@ -1,4 +1,6 @@
-#pragma once
+#ifndef _DOG_H_
+#define _DOG_H_
+
 #include "Animal.h"
 class Dog : public Animal
 {
@@ -6,7 +8,7 @@ public:
 	Dog(std::string_view name, int age, double weight, bool tail, double dogRage);
 
 	bool GetTail();
-	bool GetDogRage();
+	double GetDogRage();
 
 	void Bark();
 	void Bite();
@@ -19,3 +21,4 @@ private:
 	double dogRage{ false };
 };
 
+#endif // !_DOG_H_

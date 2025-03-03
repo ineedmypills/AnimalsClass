@@ -1,6 +1,7 @@
 #include "Animal.h"
 #include "Cat.h"
 #include "Dog.h"
+#include "Zoo.h"
 
 
 int main(){
@@ -13,4 +14,6 @@ int main(){
 
 	Dog dog("Влад", 5, 55, true, 10);
 	dog.ShowInfo();
+
+	Zoo{ cat, dog };
 }

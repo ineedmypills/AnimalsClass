@@ -5,6 +5,8 @@
 #include <string>
 #include <string_view>
 #include <format>
+#include <vector>
+#include <algorithm>
 
 class Animal
 {

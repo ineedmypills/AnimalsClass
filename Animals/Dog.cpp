@@ -11,7 +11,7 @@ bool Dog::GetTail()
 	return tail;
 }
 
-bool Dog::GetDogRage()
+double Dog::GetDogRage()
 {
 	return dogRage;
 }
