@@ -5,7 +5,7 @@
 class Dog : public Animal
 {
 public:
-	Dog(std::string_view name, int age, double weight, bool tail, double dogRage);
+	Dog(std::string_view name, int age, double weight, std::string_view voice, bool tail, double dogRage);
 
 	bool GetTail();
 	double GetDogRage();

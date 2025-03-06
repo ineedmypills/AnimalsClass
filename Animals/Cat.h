@@ -5,7 +5,7 @@
 class Cat : public Animal
 {
 public:
-	Cat(std::string_view name, int age, double weight, bool bold, bool roundEars);
+	Cat(std::string_view name, int age, double weight, std::string_view voice, bool bold, bool roundEars);
 
 	bool GetBold();
 	bool GetRoundEars();

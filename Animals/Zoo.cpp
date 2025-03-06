@@ -1,15 +1,18 @@
 #include "Zoo.h"
 
-Zoo::Zoo(std::initializer_list < Animal > list)
+Zoo::Zoo()
 {
-	Animals.resize(list.size());
-		for (size_t i = 0; i < list.size(); i++)
-		{
-			std::copy(list.begin(), list.end(), Animals.begin());
 
-		}
-		for (auto &i : Animals)
-		{
-			std::cout << i.GetName() << std::endl;
-		}
+}
+
+void Zoo::AddAnimal(std::unique_ptr<Animal> Animal)
+{
+    Animals.push_back(std::move(Animal));
+}
+
+void Zoo::AllVoice() const {
+    for (const auto& Animal : Animals)
+    {
+        Animal.get()->Voice();
+    }
 }

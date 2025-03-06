@@ -1,6 +1,6 @@
 #include "Dog.h"
 
-Dog::Dog(std::string_view name, int age, double weight, bool tail, double dogRage) : Animal(name, age, weight)
+Dog::Dog(std::string_view name, int age, double weight, std::string_view voice, bool tail, double dogRage) : Animal(name, age, weight, voice)
 {
 	this->tail = tail;
 	this->dogRage = dogRage;

@@ -8,9 +8,15 @@
 class Zoo
 {
 public:
-	Zoo(std::initializer_list < Animal > list);
+    Zoo();
+
+    void AddAnimal(std::unique_ptr<Animal> Animal);
+
+    void AllVoice() const;
+
+ 
 private:
-	std::vector <Animal> Animals;
+    std::vector<std::unique_ptr<Animal>> Animals;
 };
 
 #endif // !_ZOO_H_

@@ -1,6 +1,6 @@
 #include "Cat.h"
 
-Cat::Cat(std::string_view name, int age, double weight, bool bold, bool roundEars) : Animal(name, age, weight)
+Cat::Cat(std::string_view name, int age, double weight, std::string_view voice, bool bold, bool roundEars) : Animal(name, age, weight, voice)
 {
 	this->bold = bold;
 	this->roundEars = roundEars;

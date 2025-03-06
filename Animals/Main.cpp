@@ -8,12 +8,13 @@ int main(){
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
 
+	Zoo zoo;
 
-	Cat cat("Паша", 19, 72, false, false);
-	cat.ShowInfo();
+	Cat cat("Паша", 19, 72, "МЯУ!!", false, false);
+	Dog dog("Влад", 5, 55, "ТЯФ!!!", true, 10);
 
-	Dog dog("Влад", 5, 55, true, 10);
-	dog.ShowInfo();
+	zoo.AddAnimal(std::make_unique<Dog>(dog));
+	zoo.AddAnimal(std::make_unique<Cat>(cat));
 
-	Zoo{ cat, dog };
+	zoo.AllVoice();
 }
